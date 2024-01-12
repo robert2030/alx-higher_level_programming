@@ -5,4 +5,5 @@ test
 
 
 class BaseGeometry:
+    """test2"""
     pass
