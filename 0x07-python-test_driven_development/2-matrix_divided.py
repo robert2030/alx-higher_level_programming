@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+"""matrix"""
+
+
 def matrix_divided(matrix, div):
+    """matrix2"""
     errorMessage = "matrix must be a matrix (list of lists) of integers/floats"
     if not matrix:
         raise TypeError(errorMessage)
