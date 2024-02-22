@@ -1,0 +1,2 @@
+-- showtable
+SHOW TABLES;
