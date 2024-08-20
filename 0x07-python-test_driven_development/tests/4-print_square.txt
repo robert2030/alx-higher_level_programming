@@ -1,0 +1,47 @@
+============================
+The ``Square`` module
+============================
+
+
+This is a text file in reStructuredText format. First
+```print a square`` from the ```print_square`` module:
+
+ >>> sqr = __import__("4-print_square").print_square
+
+test senarios:
+
+
+   >>> sqr(-2.3)
+   Traceback (most recent call last):
+        ...
+   TypeError: size must be an integer
+
+
+    >>> sqr(6)
+    ######
+    ######
+    ######
+    ######
+    ######
+    ######
+
+    >>> sqr("4")
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+    >>> sqr(True)
+    #
+
+    >>> sqr(False)
+   
+
+    >>> sqr((1, 2))
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+    >>> sqr({1})
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer

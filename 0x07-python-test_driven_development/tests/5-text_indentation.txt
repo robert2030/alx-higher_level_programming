@@ -1,0 +1,38 @@
+============================
+The ``new lines`` module
+============================
+
+
+This is a text file in reStructuredText format. First
+```text with 2 new lines`` from the ```text_indentation`` module:
+
+ >>> text_indentation = __import__("5-text_indentation").text_indentation
+
+ test senarios:
+
+ >>> text_indentation(10)
+ Traceback (most recent call last):
+         ...
+ TypeError: text must be a string
+
+
+  >>> text_indentation("   A B.     C D?      E F:     G H     ")
+  A B.
+  <BLANKLINE>
+  C D?
+  <BLANKLINE>
+  E F:
+  <BLANKLINE>
+  G H
+                                 
+  >>> text_indentation("   Hey     \n     .     ")
+  Hey     
+  .
+  <BLANKLINE>
+                                                 
+  
+  >>> text_indentation("      Hello      ")
+  Hello
+  
+  
+  >>> text_indentation("    ")

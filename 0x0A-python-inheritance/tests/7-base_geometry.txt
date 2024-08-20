@@ -1,0 +1,50 @@
+===========================
+The ``Base Geometry`` module
+===========================
+
+
+Using ``BaseGeometry``
+----------------------
+
+
+>>> BaseG = __import__("7-base_geometry").BaseGeometry
+
+Examples:
+
+
+>>> m = __import__("7-base_geometry").__doc__
+>>> len(m) > 1
+True
+
+
+>>> c = __import__("7-base_geometry").BaseGeometry.__doc__
+>>> len(c) > 1
+True
+
+
+>>> bg = BaseG()
+>>> bg.integer_validator("my_int", 12)
+
+
+>>> bg = BaseG()
+>>> bg.integer_validator("my_int", 12.4)
+Traceback (most recent call last):
+    ...
+TypeError: my_int must be an integer
+
+
+>>> bg = BaseG()
+>>> type(bg)
+<class '7-base_geometry.BaseGeometry'>
+
+
+
+This class should define 2 functions
+
+``area``
+>>> 'area' in dir(BaseG)
+True
+
+``integer_validator``
+>>> 'integer_validator' in dir(BaseG)
+True

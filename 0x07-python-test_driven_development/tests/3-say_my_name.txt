@@ -1,0 +1,39 @@
+The ``Say my name`` module
+============================
+
+
+This is a text file in reStructuredText format. First
+```Say my name`` from the ```matrix_divided`` module:
+
+ >>> s_m_n = __import__("3-say_my_name").say_my_name
+
+test senarios:
+
+    >>> s_m_n("John", "Smith")
+    My name is John Smith
+
+    >>> s_m_n("Bob", 12)
+    Traceback (most recent call last):
+        ...
+    TypeError: last_name must be a string
+
+
+    >>> s_m_n(1)
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string
+
+    >>> s_m_n(1, "Ross")
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string
+
+    >>> s_m_n("None", None)
+    Traceback (most recent call last):
+        ...
+    TypeError: last_name must be a string
+
+    >>> s_m_n("game", "of", "thones")
+    Traceback (most recent call last):
+        ...
+    TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given

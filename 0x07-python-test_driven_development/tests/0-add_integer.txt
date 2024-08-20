@@ -1,0 +1,55 @@
+The ``Add Integer`` module
+============================
+
+
+This is a text file in reStructuredText format. First
+``add_integer`` from the ``Add Integer`` module:
+
+	>>> add_integer = __import__("0-add_integer").add_integer
+
+Now use it:
+
+    	>>> add_integer("a", 1)
+	Traceback (most recent call last):
+	    ...
+	TypeError: a must be an integer
+
+	>>> add_integer(1, "a")
+	Traceback (most recent call last):
+	    ...
+	TypeError: b must be an integer
+	
+	>>> add_integer("aa", "bb")
+	Traceback (most recent call last):
+	    ...
+	TypeError: a must be an integer
+
+	>> add_integer(3, 5)
+    	8
+
+	 >>> add_integer(3, 4.5)
+   	 7
+
+   	 >>> add_integer(5, -2)
+   	 3
+
+  	 >>> add_integer(-5, 2)
+   	 -3
+
+    	>>> add_integer(-2.1, -0.1)
+	-2
+
+	>>> add_integer(10.1, -2.9)
+	8
+
+	>>> add_integer(True, 4)
+	5
+
+	>>> add_integer(4, False)
+	4
+
+	>>> add_integer(None, 4)
+	Traceback (most recent call last):
+	    ...
+	TypeError: a must be an integer
+
