@@ -1,3 +1,3 @@
 #!/bin/bash
-# Sends a GET request to the provided URL and displays the body of the response (only for 200 status code)
-curl -sX GET $1 -L
+# Send a GET request to a URL and display the body of the response if status code is 200
+curl -sL "$1"
